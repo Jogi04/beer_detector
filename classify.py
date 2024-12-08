@@ -4,7 +4,6 @@ import torch
 import torch.nn as nn
 import torchvision
 from PIL import Image
-import torchvision
 from beer_names import BEER_CLASSES
 
 
