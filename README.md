@@ -1,8 +1,6 @@
 # AI beer detection and beer brand classification using pytorch
 
-![output](outputs/test.jpg)
-
-<img src="outputs/test.jpg" width="200">
+<img src="outputs/test.jpg" width="400">
 
 ## Poject Structure
 
