@@ -26,8 +26,13 @@ For the detection, I used a pretrained faster-rcnn resnet50 model which was trai
 The cropped image of a bottle can be found in outputs/. It can handle multiple bottles in one picture. The main command is:
 
 ´´´
+.
 python detect.py --input <path_to_image>
 ´´´
+
+Output:
+<img src="outputs/0-test.jpg" width="400">
+
 
 When running this command it also imports the classification functions and does the beer brand classification.
 
@@ -38,13 +43,15 @@ The beer classification model is based on a fine-tuned resnet50 architecture. Fo
 
 The command to do classification only is:
 ´´´
+.
 python classify.py --input <path_to_image>
 ´´´
-
+This prints the percentages to the console.
 Make sure to only used this on cropped images (so you have to run detection beforehand).
 
-The recommended way is to run (which does detection and classification in one step):
+The recommended way is to run (which does detection and classification in one step, take a look at the detection section):
 ´´´
+.
 python detect.py --input <path_to_image>
 ´´´
 
