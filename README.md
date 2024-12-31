@@ -2,6 +2,7 @@
 
 ![output](outputs/test.jpg)
 
+<img src="outputs/test.jpg" width="200">
 
 ## Poject Structure
 
