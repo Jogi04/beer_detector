@@ -49,7 +49,7 @@ python classify.py --input <path_to_image>
 This prints the percentages to the console.
 Make sure to only used this on cropped images (so you have to run detection beforehand).
 
-The recommended way is to run (which does detection and classification in one step, take a look at the detection section):
+The **recommended way** is to run (which does detection and classification in one step, take a look at the detection section):
 ```
 python detect.py --input <path_to_image>
 ```
