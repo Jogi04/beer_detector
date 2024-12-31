@@ -47,13 +47,13 @@ python classify.py --input <path_to_image>
 
 
 This prints the percentages to the console.
-Make sure to only used this on cropped images (so you have to run detection beforehand).
+Make sure to only use this on cropped images (so you have to run detection beforehand).
 
-The **recommended way** is to run (which does detection and classification in one step, take a look at the detection section):
+The **recommended way** is to run the following command (which does detection and classification in one step, take a look at the detection section):
 ```
 python detect.py --input <path_to_image>
 ```
-
+<img src="outputs/test.jpg" width="300">
 
 
 ### How to train your own model?
@@ -73,7 +73,7 @@ After downloading images, the folder structure should be as followed:
 |          +--filename_paulaner_image1.jpg (etc)
 ```
 
-Next step is to split the images into training and validtion. You can use the function "split_trainval" specified in dataset_helpers.py
+Next step is to split the images into training and validtion datasets. You can use the function "split_trainval" specified in dataset_helpers.py
 After that, the folder structure should be:
 ```
 .
@@ -98,7 +98,7 @@ The folder structure should now be:
 |     +--train
 |     +--val
 ```
-The final step is to actually train the model based on the cropped beer images. The functions can be found in train.py. I choose the parameters to get it running as soon as possible but I'm sure the accuracy can be improved by adjusting the parameters.
+The final step is to actually train the model based on the cropped beer images. The functions can be found in train.py. I choose the parameters to get it running as fast as possible but I'm sure the accuracy can be improved by adjusting the parameters.
 
 ## Comments or tips?
 
