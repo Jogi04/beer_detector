@@ -1,11 +1,13 @@
+import os
+
 import torchvision.transforms as transforms
+import torch
 import cv2
 import numpy
 import numpy as np
-import os
+
 from coco_names import COCO_INSTANCE_CATEGORY_NAMES as coco_names
 from classify import beer_classification
-import torch
 
 
 

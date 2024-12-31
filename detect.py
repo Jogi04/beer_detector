@@ -1,10 +1,12 @@
 import os
+import argparse
+
 import torchvision
 import torch
-import argparse
 import cv2
-import detect_utils
 from PIL import Image
+
+import detect_utils
 
 
 def detect(image_location, save_cropped_image=False,  output_filename='outputs/test.jpg', show_image=False, save_image=False):

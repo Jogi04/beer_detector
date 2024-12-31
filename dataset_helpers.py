@@ -1,5 +1,6 @@
 import os
 import random
+
 import detect
 from beer_names import BEER_CLASSES
 

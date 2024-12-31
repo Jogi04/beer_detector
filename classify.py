@@ -1,9 +1,11 @@
 import argparse
+
 import numpy
 import torch
 import torch.nn as nn
 import torchvision
 from PIL import Image
+
 from beer_names import BEER_CLASSES
 
 
