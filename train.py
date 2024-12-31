@@ -10,7 +10,7 @@ import copy
 
 
 
-def train_beermodel(folder_beers, model_output_location='models/resnet50_beer_classification.pth', num_epochs=10):
+def train_beermodel(folder_beers, model_output_location='models/resnet50_beer_classification.pth', num_epochs=20):
     """
     main function to fine tune resnet50 for beer classification
     """
@@ -43,9 +43,8 @@ def train_beermodel(folder_beers, model_output_location='models/resnet50_beer_cl
     dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'val']}
     class_names = image_datasets['train'].classes
 
-    model_ft.fc = nn.Linear(num_ftrs, len(class_names))  # determine final (fully connected) layer
+    model_ft.fc = nn.Linear(num_ftrs, len(class_names))
 
-    # torch.cuda.empty_cache() # empty cache
     model_ft = model_ft.to(device)
 
     criterion = nn.CrossEntropyLoss()
