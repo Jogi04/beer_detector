@@ -1,14 +1,16 @@
 # AI beer detection and beer brand classification using pytorch
 
-<img src="outputs/test.jpg" width="400" text-align="center">
+<img src="outputs/test.jpg" width="400">
 
 ## Poject Structure
+
+The project is based on @willemgeest's beer cooler project https://github.com/willemgeest/BeerCooler
 
 The repo consists of the following files and folders:
 - inputs/ (input folder for (test) images)
 - models/ (includes the fine-tuned classification model)
 - outputs/ (this is where the detection/classification results are placed)
-- beer_names.py (list of trained beer brands)
+- beer_names.py (list of beer brands the custom model is trained on)
 - classify.py (beer brand classification)
 - coco_names.py (coco classes for bottle detection)
 - dataset_helpers.py (useful functions to organize datasets)
@@ -22,13 +24,13 @@ All code is written in python using pytorch. In the following sections, I want t
 
 ### Beer detection
 
-For the detection, I used a pretrained faster-rcnn resnet50 model which was trained on the coco dataset. That way it's able to detect bottles. I made minor adjustments to ignore all other objects and save a copy of the image cropped down to the bottle's bounding box.
+For the detection, I used a pretrained faster-rcnn resnet50 model which was trained on the coco dataset. That way, it's able to detect bottles. I made minor adjustments to ignore all other objects and save a copy of the image cropped down to the bottle's bounding box.
 The cropped image of a bottle can be found in outputs/. It can handle multiple bottles in one picture. The main command is:
 ```
 python detect.py --input <path_to_image>
 ```
 
-<img src="outputs/0-test.jpg" width="200" text-align="center">
+<img src="outputs/0-test.jpg" width="200">
 
 
 When running this command it also imports the classification functions and does the beer brand classification.
