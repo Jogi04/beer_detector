@@ -26,7 +26,7 @@ All code is written in python using pytorch. In the following sections, I want t
 For the detection, I used a pretrained faster-rcnn resnet50 model which was trained on the coco dataset. That way it's able to detect bottles. I made minor adjustments to ignore all other objects and save a copy of the image cropped down to the bottle's bounding box.
 The cropped image of a bottle can be found in outputs/. It can handle multiple bottles in one picture. The main command is:
 
-´´´bash
+´´´
 python detect.py --input <path_to_image>
 ´´´
 
@@ -38,14 +38,14 @@ When running this command it also imports the classification functions and does 
 The beer classification model is based on a fine-tuned resnet50 architecture. For more information scroll down to the training section.
 
 The command to do classification only is:
-´´´bash
+´´´
 python classify.py --input <path_to_image>
 ´´´
 
 Make sure to only used this on cropped images (so you have to run detection beforehand).
 
 The recommended way is to run (which does detection and classification in one step):
-´´´bash
+´´´
 python detect.py --input <path_to_image>
 ´´´
 
