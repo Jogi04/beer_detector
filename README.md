@@ -20,7 +20,7 @@ The repo consists of the following files and folders:
 
 ## How does it work?
 
-All code is written in python using pytorch. In the following sections, I want to highlight the most important aspects of this project:
+All code is written in Python using PyTorch. In the following sections, I want to highlight the most important aspects of this project:
 
 ### Beer detection
 
